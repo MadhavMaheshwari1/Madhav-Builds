@@ -1,7 +1,9 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { FaBars } from "react-icons/fa6";
 import heroImage1 from '../assets/hero-element-3.png';
-import heroImage2 from '../assets/hero-element-1.png';
+import heroImage2 from '../assets/hero-element-2.png';
+import heroImage3 from '../assets/hero-element-1.png';
+import ShivJi from '../assets/shivJi.png'
 
 const HomePage = () => {
   const homeRef = useRef(null);
@@ -52,40 +54,41 @@ const HomePage = () => {
   return (
     <>
       {/* Home Section with Navbar inside it */}
-      <section ref={homeRef} id="Home" className='h-[100vh] relative bgImage w-full'>
-        <img src={heroImage1} className="hidden xl:block xl:w-[60px] xl:h-[60px] hero__element hero__element--3 filter grayscale-[10%]" alt="" />
-        <img src={heroImage2} className="hidden xl:block xl:w-[50px] xl:h-[50px] hero__element hero__element--1 filter grayscale-[10%]" alt="" />
+      <section ref={homeRef} id="Home" className='min-h-[100vh] h-auto relative bgImage w-full'>
+        <img src={heroImage1} className="hidden xl:block xl:w-[60px] xl:h-[60px] hero__element hero__element--1" alt="" />
+        <img src={heroImage2} className="hidden xl:block xl:h-[70px] hero__element hero__element--2" alt="" />
+        <img src={heroImage3} className="hidden xl:block hero__element hero__element--3" alt="" />
         {/* <img src={heroImage} className="hidden xl:block xl:w-[60px] xl:h-[60px] hero__element hero__element--3 filter grayscale-[10%]" style={{ filter: 'grayscale(50%)' }}  alt="" />
         <img src={heroImage} className="hidden xl:block xl:w-[60px] xl:h-[60px] hero__element hero__element--3 filter grayscale-[10%]" style={{ filter: 'grayscale(50%)' }}  alt="" /> */}
-        <div className={`px-14 flex flex-col gap-5 w-full justify-between h-auto py-5 items-center ${isSticky ? 'navbar--sticky' : ''}`}>
+        <div className={`px-20 flex flex-col gap-5 w-full justify-between h-auto py-5 items-center ${isSticky ? 'navbar--sticky' : ''}`}>
           <div className='flex justify-between gap-8 text-white md:text-xl font-bold w-full'>
-            <h1 className='text-white text-xl md:text-4xl'>mmdev</h1>
-            <div className="xl:flex hidden gap-4 items-center">
+            <h1 className='text-white text-xl md:text-5xl'>mmdev</h1>
+            <div className="xl:flex hidden gap-20 items-center">
               <a
                 href="#Home"
                 onClick={(e) => handleClick(e, 'Home')}
-                className={`link md:text-2xl ${activeLink === 'Home' ? 'text-blue' : ''}`}
+                className={`link md:text-3xl ${activeLink === 'Home' ? 'text-blue' : ''}`}
               >
                 Home
               </a>
               <a
                 href="#About"
                 onClick={(e) => handleClick(e, 'About')}
-                className={`link md:text-2xl ${activeLink === 'About' ? 'text-blue' : ''}`}
+                className={`link md:text-3xl ${activeLink === 'About' ? 'text-blue' : ''}`}
               >
                 About
               </a>
               <a
                 href="#Portfolio"
                 onClick={(e) => handleClick(e, 'Portfolio')}
-                className={`link md:text-2xl ${activeLink === 'Portfolio' ? 'text-blue' : ''}`}
+                className={`link md:text-3xl ${activeLink === 'Portfolio' ? 'text-blue' : ''}`}
               >
                 Portfolio
               </a>
               <a
                 href="#Contact"
                 onClick={(e) => handleClick(e, 'Contact')}
-                className={`link md:text-2xl ${activeLink === 'Contact' ? 'text-blue' : ''}`}
+                className={`link md:text-3xl ${activeLink === 'Contact' ? 'text-blue' : ''}`}
               >
                 Contact
               </a></div>
@@ -93,6 +96,7 @@ const HomePage = () => {
               <FaBars />
             </div>
           </div>
+          <div className="relative"></div>
           {isMobileMenuOpen && (
             <div className={`xl:hidden flex flex-col gap-2 bg-white w-full rounded-md`}>
               <a
@@ -126,11 +130,19 @@ const HomePage = () => {
             </div>
           )}
         </div>
-        <div className="flex w-full">
-          <div className="flex w-1/2 items-center justify-center">
-          
+        <div className="px-20 flex xl:flex-row flex-col w-full min-h-[100vh] h-auto" >
+          <div className="flex flex-col xl:w-1/2 w-full xl:justify-center justify-start text-white xl:h-[700px] md:h-[500px] h-[400px]">
+            <h1 className='md:text-4xl text-2xl font-semibold mb-4 xl:mt-0 mt-8'>Hello,I&apos;m</h1>
+            <div className='md:text-7xl text-4xl font-bold mb-8'>Madhav <span style={{ color: 'var(--text-blue)' }}>Maheshwari</span></div>
+            <div className='md:text-4xl text-2xl font-semibold mb-8'>A Frontend Developer</div>
+            <div className='flex w-full justify-between'>
+              <a className="py-3 px-6 rounded-md text-2xl" style={{ backgroundColor: 'var(--bg-blue)' }} href="#Contact"
+                onClick={(e) => handleClick(e, 'Contact')} >HIRE ME</a>
+              <a className="text-2xl flex items-center mx-8" href="#Portfolio"
+                onClick={(e) => handleClick(e, 'Portfolio')}>VIEW MY PORTFOLIO</a>
+            </div>
           </div>
-          <div className="flex w-1/2"></div>
+          <div className="flex xl:w-1/2 w-full"><img src={ShivJi} className='justify-center border-2 border-white w-full blob xl:h-[750px] mb-12 md:h-[500px] h-[400px] object-cover' alt="" /></div>
         </div>
 
 
