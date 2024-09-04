@@ -142,3 +142,36 @@ body {
     border-radius: 30% 70% 50% 50% / 40% 60% 30% 70%;
   }
 }
+
+.lazy__load__section {
+  opacity: 0;
+  transform: translateX(-200px);
+  transition: transform 2s ease-in-out, opacity 2s ease-in-out;
+}
+
+.animate__section {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.text {
+  animation: rotate 10s linear infinite;
+}
+
+.text span {
+  position: absolute;
+  left: 50%;
+  font-weight: bold;
+  font-size: 2rem;
+  transform-origin: 0px 200px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
