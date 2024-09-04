@@ -15,9 +15,11 @@ body {
   height: 100%;
   width: 100%;
 }
-.Container{
-  max-width:1320px;
+
+.Container {
+  max-width: 1920px;
 }
+
 /* Home Page */
 
 .App {
@@ -31,7 +33,46 @@ body {
   height: 100%;
 }
 
-/* Navbar.css */
+.hero__element {
+  position: absolute;
+}
+
+.hero__element--3 {
+  opacity: 0.4;
+  top: 250px;
+  left: 30px;
+  animation: animateHeroElement3 1s linear infinite alternate;
+}
+
+.hero__element--1 {
+  opacity: 0.4;
+  top: 210px;
+  left: 400px;
+  animation: animateHeroElement1 4s ease-in-out infinite alternate;
+}
+
+@keyframes animateHeroElement3 {
+  0% {
+    transform: scale(0.1);
+  }
+
+  100% {
+    transform: scale(0.5);
+  }
+}
+
+@keyframes animateHeroElement1 {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(60px);
+  }
+}
+
+/* Navbar */
+
 .link {
   /* Default link color */
   text-decoration: none;
@@ -41,14 +82,25 @@ body {
 .link.active {
   color: var(--text-blue);
 }
-.sticky-navbar {
+
+.navbar--sticky {
   position: fixed;
   top: 0;
-  max-width: 1320px !important;
-  background-color: #1B212F; /* Or any color of your choice */
+  max-width: 1920px !important;
+  background-color: #1B212F;
+  /* Or any color of your choice */
   z-index: 1000;
 }
 
 .text-blue {
   color: #5a7ffb;
+}
+
+.hamburger__menu {
+  height: 0;
+  overflow: hidden;
+  transition: height 1.2s ease-in-out;
+}
+.hamburger__menu.open {
+  height: 200px; /* Or a sufficient value to fit your content */
 }
