@@ -161,9 +161,9 @@ body {
 .text span {
   position: absolute;
   left: 50%;
-  font-weight: bold;
-  font-size: 2rem;
-  transform-origin: 0px 200px;
+  font-weight: 900;
+  font-size: 1.5rem;
+  transform-origin: 0px 120px;
 }
 
 @keyframes rotate {

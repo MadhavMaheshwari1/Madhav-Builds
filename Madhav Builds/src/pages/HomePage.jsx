@@ -4,6 +4,7 @@ import heroImage1 from '../assets/hero-element-3.png';
 import heroImage2 from '../assets/hero-element-2.png';
 import heroImage3 from '../assets/hero-element-1.png';
 import aboutImage from '../assets/aboutImage.webp'
+import workingEmoji from '../assets/workingEmoji.png'
 import ShivJi from '../assets/shivJi.png'
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
@@ -57,7 +58,7 @@ const HomePage = () => {
   }, []);
 
   useEffect(() => {
-    webDeveloper.current.innerHTML = webDeveloper.current.innerText.split('').map((ch, i) => `<span style="transform:rotate(${i * 9.8}deg)">${ch}</span>`).join('');
+    webDeveloper.current.innerHTML = webDeveloper.current.innerText.split('').map((ch, i) => `<span style="transform:rotate(${i * 10}deg)">${ch}</span>`).join('');
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -185,10 +186,13 @@ const HomePage = () => {
       </section>
       <section ref={aboutRef} id="About" className=' min-h-[100vh] h-auto w-full'>
         <div className="flex w-full md:px-20 px-8 py-6 lazy__load__section" ref={aboutImageRef}>
-          <div className="w-1/2 h-auto relative">
+          <div className="w-1/2 h-auto relative xl:block flex justify-center">
             <img src={aboutImage} className="h-full rounded-3xl" alt="" />
-            <div className="absolute w-[400px] h-[400px] bg-white rounded-full -bottom-[100px] -right-[100px]">
-              <div ref={webDeveloper} className='text w-full h-full absolute'><p >FRONT-END DEVELOPER</p></div>
+            <div className="absolute w-[15rem] h-[15rem] bg-white rounded-full -bottom-[50px] -right-[50px] flex justify-center items-center">
+              <img src={workingEmoji} className="absolute w-1/2 h-1/2" alt="" />
+              <div ref={webDeveloper} className='text w-full h-full absolute'>
+                <p>FRONT END DEVELOPER</p>
+              </div>
             </div>
           </div>
         </div>
