@@ -5,7 +5,7 @@ import heroImage2 from '../assets/hero-element-2.png';
 import heroImage3 from '../assets/hero-element-1.png';
 import aboutImage from '../assets/aboutImage.webp'
 import workingEmoji from '../assets/workingEmoji.png'
-import ShivJi from '../assets/shivJi.png'
+import Me from '../assets/Me.jpg'
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 
@@ -181,7 +181,7 @@ const HomePage = () => {
               <a href="https://www.linkedin.com/in/madhav-maheshwari-231b9022b/" target='__blank'><FaLinkedin className="text-2xl md:text-3xl lg:text-4xl" /></a>
             </div>
           </div>
-          <div className="flex xl:w-1/2 w-full"><img src={ShivJi} className='justify-center border-2 border-white w-full blob xl:h-[750px] mb-12 md:h-[500px] h-[400px] object-cover' alt="" /></div>
+          <div className="flex xl:w-1/2 w-full"><img src={Me} className='justify-center border-2 border-white w-full blob xl:h-[750px] mb-12 md:h-[500px] h-[400px] object-cover' alt="" /></div>
         </div>
       </section>
       <section ref={aboutRef} id="About" className=' min-h-[100vh] h-auto w-full'>
