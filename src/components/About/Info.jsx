@@ -94,7 +94,6 @@ const Info = () => {
                 <h2><a href="https://www.loftgarten.co/" target="_blank" rel="noreferrer">Loftgarten</a></h2>
                 <h2><a href="http://www.iaragrinspun.com/" target="_blank" rel="noreferrer">Iara Grinspun</a></h2>
                 <h2><a href="https://romainavalle.com/" target="_blank" rel="noreferrer">Romain Avalle</a></h2>
-                <h2><a href="https://www.linkedin.com/in/ronniefeng/" target="_blank" rel="noreferrer">Ronnie Feng</a></h2>
                 <h2><a href="https://loerarchitecten.com/en/" target="_blank" rel="noreferrer">Loer Architecten</a></h2>
                 <h2><a href="https://www.behance.net/martiniidesign" rel="noreferrer" target="_blank">Stefan Martinovic</a></h2>
                 <h2><a href="https://lorenzocadamuro.com/" target="_blank" rel="noreferrer">Lorenzo Cadamuro</a></h2>
