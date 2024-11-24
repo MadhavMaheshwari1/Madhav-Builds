@@ -31,9 +31,6 @@ const InfoStyles = styled.div`
             }
         }
     }
-    .info{
-    height:100vh;
-    }
     .info-credits{
         width: 35%;
         display: flex;
