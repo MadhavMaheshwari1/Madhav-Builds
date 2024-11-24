@@ -1,20 +1,12 @@
-.pWorks {
-  margin-right: 5vw !important;
-}
-.pContact {
-  margin-right: 10vw !important;
-}
-.right {
-  text-align: right !important;
-  padding-right: 6vw !important;
-}
-
-.leftP {
-  padding-left: 12vw !important;
+.mLeft10{
+  margin-left: 10vw;
 }
 
 .logo {
   top: 0vw !important;
   height: 8vw !important;
   width: 8vw !important;
+}
+.mLeft15{
+  margin-left: 15vw;
 }

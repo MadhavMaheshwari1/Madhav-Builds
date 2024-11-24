@@ -31,8 +31,8 @@ const BigTextStyles = styled.div`
 const BigText = () => {
     const { transition, textReveal } = Animations();
     return (
-        <BigTextStyles data-scroll-section className="big-text">
-            <div className="container leftP">
+        <BigTextStyles data-scroll-section className="big-text mLeft10">
+            <div className="container">
                 <motion.h1
                     variants={textReveal}
                     initial="initial"
@@ -42,7 +42,7 @@ const BigText = () => {
                     Leading 
                 </motion.h1>
             </div>
-            <div className="container right">
+            <div className="container mLeft15">
                 <motion.h1
                     variants={textReveal}
                     initial="initial"
@@ -52,7 +52,7 @@ const BigText = () => {
                     growth
                 </motion.h1>
             </div>
-            <div className="container right">
+            <div className="container">
                 <motion.h1
                     variants={textReveal}
                     initial="initial"
@@ -62,7 +62,7 @@ const BigText = () => {
                     driving
                 </motion.h1>
             </div>
-            <div className="container leftP">
+            <div className="container mLeft15">
                 <motion.h1
                     variants={textReveal}
                     initial="initial"
