@@ -16,7 +16,7 @@ const BigTextStyles = styled.div`
             text-align: right;
         }
         :nth-child(3) {
-            padding-left: 15vw;
+            padding-left: 25vw;
         }
         h1 {
             text-transform: uppercase;
@@ -32,7 +32,7 @@ const BigText = () => {
     const { transition, textReveal } = Animations();
     return (
         <BigTextStyles data-scroll-section className="big-text">
-            <div className="container">
+            <div className="container leftP">
                 <motion.h1
                     variants={textReveal}
                     initial="initial"
@@ -42,17 +42,17 @@ const BigText = () => {
                     Leading 
                 </motion.h1>
             </div>
-            <div className="container">
+            <div className="container center">
                 <motion.h1
                     variants={textReveal}
                     initial="initial"
                     animate="animate"
                     transition={{ ...transition, delay: 3.2 }}
                 >
-                    growth,
+                    growth
                 </motion.h1>
             </div>
-            <div className="container">
+            <div className="container right">
                 <motion.h1
                     variants={textReveal}
                     initial="initial"
@@ -62,7 +62,7 @@ const BigText = () => {
                     driving
                 </motion.h1>
             </div>
-            <div className="container">
+            <div className="container leftP">
                 <motion.h1
                     variants={textReveal}
                     initial="initial"

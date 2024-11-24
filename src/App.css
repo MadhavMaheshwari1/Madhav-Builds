@@ -38,13 +38,20 @@
   animation: underlineEffect 2s ease-in-out infinite;
 }
 
-/* Info */
-/* @media (max-width: 500px) {
-  .info {
-    height: 0vh !important;
-  }
-} */
-/* 
-.info {
-  height: 35vw !important;
-} */
+.right {
+  text-align: right !important;
+  padding-right: 5vw;
+}
+.center {
+  text-align: center !important;
+}
+
+.leftP {
+  padding-left: 5vw !important;
+}
+
+.logo {
+  top: 0vw !important;
+  height: 8vw !important;
+  width: 8vw !important;
+}

@@ -1,14 +1,27 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import logo from "../assets/Logo.avif"
 
 const NavStyles = styled.div`
-    .home,.works, .about{
+    .logo,.works, .about{
         position: fixed;
         z-index: 20;
     }
 
-    .works, .about,.home{
+    .logo{
+        top: 2vw;
+        left: 2vw;
+        width: 3.2vw;
+        height: 3.2vw;
+        mix-blend-mode: normal;
+        @media (hover: none) and (pointer: coarse), (max-width: 500px){
+            width: 7vw;
+            height: 7vw;
+        }
+    }
+
+    .works, .about{
         transition: 0.3s all ease;
         transform: rotate(90deg);
         transform-origin: 0% 0%;
@@ -23,6 +36,9 @@ const NavStyles = styled.div`
         }
     }
 
+    .works{
+        top: 2.2vw;
+    }
 
     .about{
         bottom: 6.5vw;
@@ -38,8 +54,10 @@ const Nav = () => {
 
     return (
         <NavStyles>
+            <Link className="logo nav-button" to="/">
+                <img src={logo} alt="Logo"/>
+            </Link>
             <Link className="works nav-button" to="/works">Works</Link>
-            {/* <Link className="nav-button home" to="/">Home</Link> */}
             <Link className="about nav-button" to="/about">About</Link>
         </NavStyles>
     )
