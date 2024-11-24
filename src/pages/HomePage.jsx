@@ -36,6 +36,7 @@ const HomepageStyles = styled(motion.div)`
             .pic{
                 height: 50vh;
                 overflow: hidden;
+                border-radius:40px;
             }
             .descriptions{
                 margin-top: 3vh;

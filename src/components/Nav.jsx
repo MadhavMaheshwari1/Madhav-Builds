@@ -11,7 +11,7 @@ const NavStyles = styled.div`
 
     .logo{
         top: 2vw;
-        left: 2vw;
+        left: 0vw;
         width: 3.2vw;
         height: 3.2vw;
         mix-blend-mode: normal;
