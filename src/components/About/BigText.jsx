@@ -42,7 +42,7 @@ const BigText = () => {
                     Leading 
                 </motion.h1>
             </div>
-            <div className="container center">
+            <div className="container right">
                 <motion.h1
                     variants={textReveal}
                     initial="initial"

@@ -40,9 +40,7 @@
 
 .right {
   text-align: right !important;
-}
-.center {
-  text-align: center !important;
+  padding-right: 6vw !important;
 }
 
 .leftP {
