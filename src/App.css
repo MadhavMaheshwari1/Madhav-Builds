@@ -41,7 +41,7 @@
 /* Info */
 @media (max-width: 500px) {
   .info {
-    height: 0vw !important;
+    height: 10vh !important;
   }
 }
 
