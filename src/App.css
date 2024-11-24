@@ -1,7 +1,4 @@
-.mLeft10 {
-  margin-left: 10vw;
-}
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
   .logo {
     height: 10vh !important;
     width: 10vh !important;
@@ -16,4 +13,4 @@
 }
 .mLeft15 {
   margin-left: 15vw;
-}
+} */

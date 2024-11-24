@@ -12,12 +12,7 @@ const BigTextStyles = styled.div`
     .container {
         overflow: hidden;
         width: 100%;
-        :nth-child(1) {
-            text-align: center;
-        }
-        :nth-child(3) {
-            padding-left: 25vw;
-        }
+        text-align: center;
         h1 {
             text-transform: uppercase;
             font-size: calc(var(--VW) * 10);
@@ -39,7 +34,7 @@ const BigText = () => {
                     animate="animate"
                     transition={{ ...transition, delay: 3 }}
                 >
-                    Leading 
+                    Leading
                 </motion.h1>
             </div>
             <div className="container mLeft15">
