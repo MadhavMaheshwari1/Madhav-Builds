@@ -1,16 +1,16 @@
 import React from "react";
 import styled from "styled-components";
-import {Nav} from "../components/Nav";
-import {useScroll} from "../hooks/useScroll";
-import {motion} from "framer-motion";
-import {Panels} from "../components/Panels";
+import { Nav } from "../components/Nav";
+import { useScroll } from "../hooks/useScroll";
+import { motion } from "framer-motion";
+import { Panels } from "../components/Panels";
 import { Link } from "react-router-dom";
-import {Info} from "../components/About/Info";
-import {BigText} from "../components/About/BigText";
-import {MainSection} from "../components/About/MainSection";
+import { Info } from "../components/About/Info";
+import { BigText } from "../components/About/BigText";
+import { MainSection } from "../components/About/MainSection";
 
 const AboutStyles = styled(motion.div)`
-    padding: 0 4vw;
+    padding: 0 10vw;
     padding-bottom: 6vw;
     .hello{
         h1{
@@ -55,35 +55,35 @@ const AboutStyles = styled(motion.div)`
     }
 `
 
-const About = ()=>{
-    const {scrollRef} = useScroll();
+const About = () => {
+    const { scrollRef } = useScroll();
     return (
         <>
-            <Nav/>
-            <Panels/>
-            <AboutStyles 
-            initial={{backgroundColor: "#0f0e0e", pointerEvents: "none"}}
-            animate={{backgroundColor: "transparent", pointerEvents: "unset"}}
-            exit={{opacity: [1, 1, 0], transition:{duration: 2, times: [0, 0.99, 1]}}}
-            ref={scrollRef} data-scroll-container >
-                <BigText/>
-                <div data-scroll-section  className="hello">
-                    <h1  data-scroll data-scroll-speed="-8" data-scroll-direction="horizontal">Hi, my name is</h1>
+            <Nav />
+            <Panels />
+            <AboutStyles
+                initial={{ backgroundColor: "#0f0e0e", pointerEvents: "none" }}
+                animate={{ backgroundColor: "transparent", pointerEvents: "unset" }}
+                exit={{ opacity: [1, 1, 0], transition: { duration: 2, times: [0, 0.99, 1] } }}
+                ref={scrollRef} data-scroll-container >
+                <BigText />
+                <div data-scroll-section className="hello">
+                    <h1 data-scroll data-scroll-speed="-8" data-scroll-direction="horizontal">Hi, my name is</h1>
                 </div>
                 <div data-scroll-section className="name">
                     <h1 data-scroll data-scroll-speed="0.5">Bhavya</h1>
                     <h3 data-scroll data-scroll-speed="6">CTO at Persist Ventures</h3>
                     <h1 data-scroll data-scroll-speed="0.5">Bansal</h1>
                 </div>
-                <MainSection/>
+                <MainSection />
                 <div data-scroll-section className="split">
-                    <h1>AI Engineer</h1>
-                    <h1>Fullstack Capable.</h1>
+                    <h1>Former AI Engineer</h1>
+                    <h1>Now Full Stack CTO</h1>
                 </div>
-                <Info/>
+                <Info />
             </AboutStyles>
         </>
     )
 }
 
-export {About}
+export { About }

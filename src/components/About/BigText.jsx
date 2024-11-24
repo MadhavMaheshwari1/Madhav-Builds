@@ -12,8 +12,8 @@ const BigTextStyles = styled.div`
     .container {
         overflow: hidden;
         width: 100%;
-        :nth-child(2) {
-            text-align: right;
+        :nth-child(1) {
+            text-align: center;
         }
         :nth-child(3) {
             padding-left: 25vw;

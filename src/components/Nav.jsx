@@ -10,14 +10,14 @@ const NavStyles = styled.div`
     }
 
     .logo{
-        top: 2vw;
+        top: 0vw;
         left: 0vw;
-        width: 3.2vw;
-        height: 3.2vw;
+        width: 8vw;
+        height: 8vw;
         mix-blend-mode: normal;
         @media (hover: none) and (pointer: coarse), (max-width: 500px){
-            width: 7vw;
-            height: 7vw;
+            width: 14vw;
+            height: 14vw;
         }
     }
 

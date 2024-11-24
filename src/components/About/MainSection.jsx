@@ -60,11 +60,11 @@ const MainSection = () => {
     });
     return (
         <MainSectionStyles data-scroll-section className="main">
-            <div data-scroll data-scroll-speed="6" className="main-pic" ref={profileRef}></div>
+            <div data-scroll data-scroll-speed="6" className="main-pic rounded-[40px]" ref={profileRef}></div>
             <div className="main-text">
                 <p>Welcome to my portfolio! I'm Bhavya Bansal, the Chief Technology Officer at <a href="https://www.persistventures.com" target="_blank" rel="noreferrer">Persist Ventures</a>. With a rich background in full-stack development, AI, and software engineering, I focus on solving complex problems with innovative technological solutions. My experience spans across diverse industries, working with teams to create impactful AI-driven products and digital platforms.</p>
                 <p>Over the years, I've had the privilege to lead technical projects that bridge the gap between cutting-edge development and client success. I am passionate about driving business growth through technology and finding the perfect balance between creativity and practicality in digital solutions.</p>
-                <p>I also worked at <a href="https://www.facesearch.ai" target="_blank" rel="noreferrer">FacesearchAI</a> and as a Full Stack Engineer at <a href="https://www.heydaw.com" target="_blank" rel="noreferrer">HeyDaw Technologies</a>, where I contribute to innovative AI and software development. In addition, I previously worked at <a href="https://www.telaverge.com" target="_blank" rel="noreferrer">Telaverge Communications</a> and <a href="https://www.heydaw.com" target="_blank" rel="noreferrer">HeyDaw Technologies</a>, building solutions in the AI domain.</p>
+                <p>I also worked at <a href="https://www.facesearch.ai" target="_blank" rel="noreferrer" className="underline">FacesearchAI</a> as a CTO, where I contributed to Innovative AI and software development strategies. In addition, I previously worked at <a href="https://www.telaverge.com" target="_blank" rel="noreferrer" className="underline">Telaverge Communications</a> and <a href="https://www.heydaw.com" target="_blank" rel="noreferrer" className="underline">HeyDaw Technologies</a>, building solutions in the AI domain.</p>
                 <p>Outside of work, I have a deep interest in boxing, especially the strategies used by fighters in the lower weight divisions. This hobby keeps me inspired to think strategically and apply those lessons to my work in technology. I'm always looking for new opportunities to connect and collaborate with like-minded professionals!</p>
             </div>
         </MainSectionStyles>
