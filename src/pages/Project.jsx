@@ -27,7 +27,7 @@ const ProjectStyles = styled(motion.div)`
     @media (hover: none) and (pointer: coarse), (max-width: 500px) {
       left: -38%;
       width: 120%;
-      margin: 15vw 0;
+      margin: 5vw 0;
     }
     &-wrapper {
       overflow: hidden;
@@ -49,7 +49,7 @@ const ProjectStyles = styled(motion.div)`
 
 const Project = () => {
   const { scrollRef } = useScroll();
-  const { projectID } = useParams(); // No TypeScript type here
+  const { projectID } = useParams();
   const { getData } = useData();
   const { transition, angleTextReveal } = Animations();
 
