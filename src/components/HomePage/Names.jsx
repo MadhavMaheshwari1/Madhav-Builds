@@ -67,7 +67,7 @@ const titleTextReveal = {
 //component
 const Names = () => {
     const Madhav = ["R", "A", "D", "H", "E"]
-    const Maheshwari= ["R", "A", "D", "H", "E"]
+    const Maheshwari = ["R", "A", "D", "H", "E"]
     const { transition } = Animations();
     return (
         <NamesStyles>
