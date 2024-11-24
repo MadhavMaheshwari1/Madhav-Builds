@@ -39,6 +39,11 @@
 }
 
 /* Info */
+@media (max-width: 500px) {
+  .info {
+    height: 0vw !important;
+  }
+}
 
 .info{
   height:35vw !important;

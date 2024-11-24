@@ -186,7 +186,7 @@ const Home = () => {
               variants={opacityReveal} initial="initial"
               animate="animate"
               transition={{ ...transition, duration: 1, delay: 4.5 }}
-            >Interactive developer striving to craft memorable experiences on the digital canvas. Front-end addicted, Fullstack capable.Currently located in Dehradun.</motion.p>
+            >Hello 👋 I'm <span className="Underline">Bhavya Bansal</span>, CTO at Persist Ventures. Passionate about using technology to drive innovation and business growth, I specialize in aligning tech strategies with organizational goals. Currently located in Mumbai...</motion.p>
           </div>
           <div className="right-bottom">
             <motion.div className="link-container">
