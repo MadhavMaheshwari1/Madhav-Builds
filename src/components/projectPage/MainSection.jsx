@@ -21,13 +21,13 @@ const MainSectionStyles = styled.div`
       overflow: hidden;
       margin-bottom: 3vw;
       @media (hover: none) and (pointer: coarse), (max-width: 500px) {
-        margin-bottom: 6vw;
+        margin-bottom: 3vw;
       }
       .title {
-        font-size: calc(var(--VW) * 3);
+        font-size: calc(var(--VW) * 2);
         position: relative;
         @media (hover: none) and (pointer: coarse), (max-width: 500px) {
-          font-size: calc(var(--VW) * 8);
+          font-size: calc(var(--VW) * 6);
         }
       }
       .underline {

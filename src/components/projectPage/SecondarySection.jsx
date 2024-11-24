@@ -4,7 +4,7 @@ import styled from "styled-components";
 const SecondarySectionStyles = styled.div`
   margin: 20vh 10vw;
   @media (hover: none) and (pointer: coarse), (max-width: 500px) {
-    margin: 10vh 0;
+    margin: 5vh 0;
   }
   .content {
     h2 {

@@ -2,12 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import { Nav } from "../components/Nav";
 import { useScroll } from "../hooks/useScroll";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom"; // Import useNavigate for navigation
 import { MainSection } from "../components/projectPage/MainSection";
 import { SecondarySection } from "../components/projectPage/SecondarySection";
 import { PhoneSection } from "../components/projectPage/PhoneSection";
 import { DesktopSection } from "../components/projectPage/DesktopSection";
-import { TabletSection } from "../components/projectPage/TabletSection";
 import { ProjectFooter } from "../components/projectPage/ProjectFooter";
 import { useData } from "../hooks/UseData";
 import { motion } from "framer-motion";
@@ -52,6 +51,7 @@ const Project = () => {
   const { projectID } = useParams();
   const { getData } = useData();
   const { transition, angleTextReveal } = Animations();
+  const navigate = useNavigate(); // Hook to navigate to different pages
 
   const {
     title,
@@ -67,13 +67,30 @@ const Project = () => {
     next,
   } = getData(projectID);
 
+  // Function to modify path and navigate
+  const getUpdatedNextPath = () => {
+    // Get the current path
+    const currentPath = window.location.pathname;
+
+    // Split path to pop the last part
+    const pathParts = currentPath.split('/');
+
+    // Remove the last part (projectID) and append the new 'next' value
+    pathParts.pop();
+    pathParts.push(next); // Add the 'next' value from your data
+
+    // Create the new path and navigate
+    const newPath = pathParts.join('/');
+    return newPath;
+  };
+
   return (
     <>
       <Nav />
       <Panels />
       <ProjectStyles
-        initial={{ backgroundColor: "#0f0e0e", pointerEvents: "none" }}
-        animate={{ backgroundColor: "transparent", pointerEvents: "unset" }}
+        initial={{ backgroundColor: "rgba(0, 0, 0, 0)", pointerEvents: "none" }}
+        animate={{ backgroundColor: "rgba(0, 0, 0, 0)", pointerEvents: "unset" }}
         exit={{
           opacity: [1, 1, 0],
           transition: { duration: 2, times: [0, 0.99, 1] },
@@ -110,23 +127,9 @@ const Project = () => {
           liveLink={liveLink}
         />
         <SecondarySection secondary={secondary} />
-        {mobileFirst && desktopImgSrc.length > 0 && phoneImgSrc.length > 0 && (
-          <>
-            <PhoneSection phoneImgSrc={phoneImgSrc} />
-            <DesktopSection desktopImgSrc={desktopImgSrc} />
-          </>
-        )}
-        {mobileFirst && desktopImgSrc.length === 0 && phoneImgSrc.length > 0 && (
-          <PhoneSection phoneImgSrc={phoneImgSrc} />
-        )}
-        {!mobileFirst && phoneImgSrc.length > 0 && (
-          <>
-            <DesktopSection desktopImgSrc={desktopImgSrc} />
-            <PhoneSection phoneImgSrc={phoneImgSrc} />
-          </>
-        )}
-        {tabletImgSrc.length > 0 && <TabletSection tabletImgSrc={tabletImgSrc} />}
-        <ProjectFooter next={next} />
+        <PhoneSection phoneImgSrc={phoneImgSrc} />
+        <DesktopSection desktopImgSrc={desktopImgSrc} />
+        <ProjectFooter next={getUpdatedNextPath()} />
       </ProjectStyles>
     </>
   );

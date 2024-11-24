@@ -4,7 +4,7 @@ import styled from "styled-components";
 const PhoneSectionStyles = styled.div`
   display: flex;
   flex-wrap: nowrap;
-  margin: 15vh 10vw;
+  margin: 0vh 0vw;
   justify-content: space-around;
   .image-wrapper {
     width: 28%;

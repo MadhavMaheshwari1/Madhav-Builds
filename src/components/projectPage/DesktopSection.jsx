@@ -5,7 +5,7 @@ const DesktopSectionStyles = styled.div`
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: 15vh 0;
+    margin: 5vh 0;
     .main{
         width: 55%;
         @media (hover: none) and (pointer: coarse), (max-width: 500px){
