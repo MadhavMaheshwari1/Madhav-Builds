@@ -33,7 +33,13 @@
   bottom: 0;
   left: 0%;
   width: 0;
-  height: 5px;
-  background-color: orange;
+  height: 4px;
+  background-color: rgb(0, 0, 0);
   animation: underlineEffect 2s ease-in-out infinite;
+}
+
+/* Info */
+
+.info{
+  height:50vw !important;
 }

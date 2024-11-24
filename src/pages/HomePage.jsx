@@ -159,7 +159,7 @@ const Home = () => {
                 animate="animate"
                 transition={{ ...transition, duration: 1, delay: 4.5 }}
               >
-                Hello 👋 I'm <span className="Underline">Madhav Maheshwari</span> an Interactive developer striving to craft memorable experiences on the digital canvas. Front-end addicted, Fullstack capable. Currently located in Dehradun.</motion.p>
+                Hello 👋 I'm <span className="Underline">Bhavya Bansal</span>, CTO at Persist Ventures. Passionate about using technology to drive innovation and business growth, I specialize in aligning tech strategies with organizational goals. Currently located in Mumbai...</motion.p>
             </div>
           </div>
           <div className="left-bottom">
@@ -167,7 +167,7 @@ const Home = () => {
               variants={opacityReveal} initial="initial"
               animate="animate"
               transition={{ ...transition, duration: 1, delay: 5.7 }}
-              href="www.linkedin.com/in/madhav-maheshwari-231b9022b" target="_blank" rel="noreferrer">
+              href="https://www.linkedin.com/in/bhavya-bansal98/" target="_blank" rel="noreferrer">
               <FaLinkedin />
             </motion.a>
             <motion.a
