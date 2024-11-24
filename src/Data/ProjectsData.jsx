@@ -1,6 +1,6 @@
 import React from 'react';
 import ChatMate1 from "../assets/images/projects/ChatMate/ChatMateLaptop.webp";
-import ChatMate2 from "../assets/images/projects/ChatMate/ChatMateMobile.webp";
+import ChatMate2 from "../assets/images/projects/ChatMate/ChatMateTablet.webp";
 import FaceSearchAI1 from "../assets/images/projects/FaceSearchAI/FaceSearchAiMackbook.webp";
 import FaceSearchAI3 from "../assets/images/projects/FaceSearchAI/FaceSearchAIMobile1.webp";
 import FaceSearchAI4 from "../assets/images/projects/FaceSearchAI/FaceSearchAIMobile2.webp";
