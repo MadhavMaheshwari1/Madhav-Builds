@@ -56,7 +56,7 @@ export const ProjectData = [
         mobileFirst: true,
         githubLink: "https://github.com/MadhavMaheshwari1/ChatMate",
         liveLink: "https://chatmate-b4t0.onrender.com",
-        next: "Insight IQ"
+        next: "InsightIQ"
     },
     {
         id: "InsightIQ",
