@@ -53,23 +53,6 @@ const AboutStyles = styled(motion.div)`
             }
         }
     }
-    .contact{
-        text-align: right;
-        h1{
-            font-size: calc(var(--VW)*3);
-            text-transform: uppercase;
-        }
-        a{
-            font-size: calc(var(--VW)*7);
-            text-transform: uppercase;
-            -webkit-text-fill-color: var(--burlywood);
-            -webkit-text-stroke: 0.14vw var(--black);
-            &:hover{
-                -webkit-text-fill-color: var(--black);
-                -webkit-text-stroke: 0.14vw var(--burlywood);
-            }
-        }
-    }
 `
 
 const About = ()=>{
@@ -98,10 +81,6 @@ const About = ()=>{
                     <h1>Fullstack Capable.</h1>
                 </div>
                 <Info/>
-                <div data-scroll-section  className="contact">
-                    <h1>Got Some Ideas?</h1>
-                    <a href="https://www.linkedin.com/in/bhavya-bansal98/" target="_blank">Let's Talk.</a>
-                </div>
             </AboutStyles>
         </>
     )
