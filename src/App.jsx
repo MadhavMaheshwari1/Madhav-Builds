@@ -1,9 +1,12 @@
 import GlobalStyles from './styles/GlobalStyles.js';
 import { Home } from './pages/HomePage.jsx';
+import "./App.css";
 import { useEffect } from 'react';
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import { Cursor } from "./components/Cursor.jsx"
 import { Cover } from "./components/Cover.jsx"
+import Works from './pages/Works.jsx';
+import About from './pages/About.jsx';
 
 function App() {
 
@@ -34,6 +37,8 @@ function App() {
       <Cover />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/works" element={<Works />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </div>
 

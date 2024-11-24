@@ -55,7 +55,7 @@ const Cursor = ()=>{
             scale: hoverNav? 1.8: 1,
             opacity: hoverNav? 1 : 0.15,
             border: hoverNav? "0.1vw solid #0f0e0e" : "none",
-            backgroundColor: hoverNav? "#f6c9a0" : "#0f0e0e",
+            backgroundColor: hoverNav ? "rgba(246, 201, 160, 1)" : "rgba(15, 14, 14, 1)",
         }}
         transition= {{ease: "linear", duration: 0.15}}
         />

@@ -98,14 +98,8 @@ const HomepageStyles = styled(motion.div)`
             .link-container{
                 overflow: hidden;
                 text-align: right;
-                :nth-child(1){
-                    padding-right: 5vw;
-                    @media (hover: none) and (pointer: coarse), (max-width: 500px){
-                        padding-right: 0;
-                    }
-                }
-                :nth-child(3){
-                    padding-right: 10vw;
+                a{
+                    padding-right: 0vw;
                     @media (hover: none) and (pointer: coarse), (max-width: 500px){
                         padding-right: 0;
                     }
@@ -152,8 +146,8 @@ const Home = () => {
     <>
       <Panels />
       <HomepageStyles
-        initial={{ backgroundColor: "#0f0e0e", pointerEvents: "none" }}
-        animate={{ backgroundColor: "transparent", pointerEvents: "unset" }}
+        initial={{ backgroundColor: "rgba(0, 0, 0, 0)", pointerEvents: "none" }}
+        animate={{ backgroundColor: "rgba(0, 0, 0, 0)", pointerEvents: "unset" }}
         exit={{ opacity: [1, 1, 0], transition: { duration: 2, times: [0, 0.99, 1] } }}
       >
         <div className="left">
@@ -165,7 +159,7 @@ const Home = () => {
                 animate="animate"
                 transition={{ ...transition, duration: 1, delay: 4.5 }}
               >
-                Hello 👋 I'm Madhav Maheshwari an Interactive developer striving to craft memorable experiences on the digital canvas. Front-end addicted, Fullstack capable. Currently located in Dehradun.</motion.p>
+                Hello 👋 I'm <span className="Underline">Madhav Maheshwari</span> an Interactive developer striving to craft memorable experiences on the digital canvas. Front-end addicted, Fullstack capable. Currently located in Dehradun.</motion.p>
             </div>
           </div>
           <div className="left-bottom">
@@ -192,28 +186,28 @@ const Home = () => {
               variants={opacityReveal} initial="initial"
               animate="animate"
               transition={{ ...transition, duration: 1, delay: 4.5 }}
-            >Interactive developer striving to craft memorable experiences on the digital canvas. Front-end addicted, Fullstack capable. Currently located in Dehradun.</motion.p>
+            >Interactive developer striving to craft memorable experiences on the digital canvas. Front-end addicted, Fullstack capable.Currently located in Dehradun.</motion.p>
           </div>
           <div className="right-bottom">
             <motion.div className="link-container">
               <motion.div className="link-wrapper"
                 variants={angleTextReveal} initial="initial" animate="animate" transition={{ ...transition, duration: 1, delay: 5 }}
               >
-                <Link to="works"><span className="number">01.</span>Works</Link>
+                <Link to="/works" className="pWorks"><span className="number">01.</span>Works</Link>
               </motion.div>
             </motion.div>
             <motion.div className="link-container">
               <motion.div className="link-wrapper"
                 variants={angleTextReveal} initial="initial" animate="animate" transition={{ ...transition, duration: 1, delay: 5.2 }}
               >
-                <Link to="about"><span className="number">02.</span>About</Link>
+                <Link to="/about"><span className="number">02.</span>About</Link>
               </motion.div>
             </motion.div>
             <motion.div className="link-container">
               <motion.div className="link-wrapper"
                 variants={angleTextReveal} initial="initial" animate="animate" transition={{ ...transition, duration: 1, delay: 5.4 }}
               >
-                <a href="mailto:maheshwarimadhav166@gmail.com"><span className="number">03.</span>Contact</a>
+                <Link to="mailto:maheshwarimadhav166@gmail.com" className="pContact"><span className="number">03.</span>Contact</Link>
               </motion.div>
             </motion.div>
           </div>
