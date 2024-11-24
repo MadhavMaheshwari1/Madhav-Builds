@@ -4,40 +4,6 @@
 .pContact {
   margin-right: 10vw !important;
 }
-
-/* My Name Underlining Effect */
-
-@keyframes underlineEffect {
-  0% {
-    width: 0;
-    left: 0%;
-  }
-  50% {
-    width: 100%;
-    left: 0;
-  }
-  100% {
-    width: 0;
-    left: 0%;
-  }
-}
-
-.Underline {
-  position: relative;
-  display: inline-block;
-}
-
-.Underline::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0%;
-  width: 0;
-  height: 4px;
-  background-color: rgb(0, 0, 0);
-  animation: underlineEffect 2s ease-in-out infinite;
-}
-
 .right {
   text-align: right !important;
   padding-right: 6vw !important;
