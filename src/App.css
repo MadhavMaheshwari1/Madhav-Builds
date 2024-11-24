@@ -39,12 +39,12 @@
 }
 
 /* Info */
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
   .info {
-    height: 10vh !important;
+    height: 0vh !important;
   }
-}
-
-.info{
-  height:35vw !important;
-}
+} */
+/* 
+.info {
+  height: 35vw !important;
+} */
