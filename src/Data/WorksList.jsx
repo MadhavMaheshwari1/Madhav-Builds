@@ -25,16 +25,6 @@ const WorksList = [
         offsetY: -10,
     },
     {
-        id: "ChatMate",
-        title: "Chat Mate",
-        src: ChatMate,
-        leftFlex: 1,
-        rightFlex: 3,
-        thumbnailOffset: "70%",
-        offsetX: -10,
-        offsetY: 5,
-    },
-    {
         id: "InsightIQ",
         title: "Insight IQ",
         src: InsightIQ,

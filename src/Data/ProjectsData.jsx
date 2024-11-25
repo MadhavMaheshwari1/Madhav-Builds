@@ -61,10 +61,6 @@ export const ProjectData = [
             "AI & Machine Learning",
             "Neural Networks",
             "Deep Learning",
-            "Data Privacy & Security",
-            "Scalable Architecture",
-            "Cloud Infrastructure",
-            "Ethical AI",
             "Bias Mitigation",
             "Real-time Data Processing",
             "Team Leadership",
@@ -75,28 +71,11 @@ export const ProjectData = [
         mobileFirst: true,
         githubLink: "https://github.com/MadhavMaheshwari1/ChatMate",
         liveLink: "https://chatmate-b4t0.onrender.com",
-        next: "ChatMate"
-    },
-    {
-        id: "ChatMate",
-        sequence: 3,
-        title: "ChatMate",
-        text: [
-            "As a Full Stack Engineer for ChatMate, I focused on building a fast, secure real-time messaging platform. I developed a secure login system, implemented WebSocket communication, and optimized both back-end and front-end performance.",
-            "I reduced message latency by 25% and integrated MongoDB for scalability, supporting thousands of messages per second. My work contributed to creating a robust, secure platform meeting technical and user needs."
-        ],
-        secondary: ["PWA", "React", "JavaScript", "Node JS"],
-        phoneImgSrc: [ChatMate2],
-        desktopImgSrc: [],
-        tabletImgSrc: [ChatMate1],
-        mobileFirst: true,
-        githubLink: "https://github.com/MadhavMaheshwari1/ChatMate",
-        liveLink: "https://chatmate-b4t0.onrender.com",
         next: "InsightIQ"
     },
     {
         id: "InsightIQ",
-        sequence: 4,
+        sequence: 3,
         title: "Insight IQ",
         text: [
             "As a Software Engineer at Telaverge Communications, I contributed to the development of Insight IQ, an analytics platform delivering real-time insights. My role focused on building and optimizing backend services for fast data processing, secure APIs, and seamless integration with data sources, ensuring scalability and performance.",
