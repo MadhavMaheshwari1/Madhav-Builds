@@ -28,8 +28,9 @@ export const ProjectData = [
         sequence: 1,
         title: "Venture Flow ",
         text: [
-            "At Persist Ventures, we recognized that startups often face challenges in making sense of their financial data. To address this, I spearheaded the creation of the Persist Ventures Dashboard, a SaaS platform designed to bring clarity to financial analytics. My journey as the CTO began with a vision to deliver a tool that not only simplifies complex data but also empowers startups to make smarter, data-driven decisions.",
-            "From architecting the scalable backend to integrating secure cloud services, every decision was aimed at building a robust foundation for the platform. I worked closely with the team to craft an intuitive user interface, combining elegant design with functionality. The dashboard showcases bar graphs, pie charts, and key performance indicators in real-time, offering users actionable insights at a glance. This project has been a fulfilling endeavor, helping startups unlock their potential and scale with confidence."
+            "At Persist Ventures, I led the development of the Persist Ventures Dashboard, a SaaS platform designed to simplify financial analytics for startups. As CTO, my goal was to create a tool that empowers startups to make smarter, data-driven decisions.",
+
+            "I oversaw the architecture of a scalable backend and integrated secure cloud services. Collaborating with the team, we designed an intuitive interface featuring real-time bar graphs, pie charts, and KPIs, helping startups unlock their potential and scale confidently."
         ],
         secondary: [
             "SaaS Platform",
@@ -37,12 +38,11 @@ export const ProjectData = [
             "React",
             "Node.js",
             "MongoDB",
-            "Cloud Infrastructure",
             "Data Visualization"
         ],
-        phoneImgSrc: [PersistMobile3,PersistMobile1,PersistMobile2],
+        phoneImgSrc: [PersistMobile3, PersistMobile1, PersistMobile2],
         desktopImgSrc: [],
-        tabletImgSrc: [PersistTablet2,PersistTablet1],
+        tabletImgSrc: [PersistTablet2, PersistTablet1],
         mobileFirst: true,
         githubLink: "https://github.com/MadhavMaheshwari1",
         liveLink: "https://github.com/MadhavMaheshwari1",
@@ -53,7 +53,9 @@ export const ProjectData = [
         sequence: 2,
         title: "Face IQ",
         text: [
-            "I remember the early days of the facial recognition project vividly. It was a vision we had discussed for months, but uncertainty loomed over its execution. One pivotal morning, I realized the key to moving forward was not just in the technology but in building a team capable of delivering a solution with precision and responsibility.As the CTO, my role was multifaceted. I spearheaded the architectural design, ensuring scalability and security were at the forefront. I collaborated closely with the engineers to integrate cutting-edge AI and machine learning models while ensuring data privacy was non-negotiable. There were challenges—ranging from training the neural networks to optimizing performance for real-time recognition—but every setback became an opportunity to innovate.Beyond the technical aspects, I focused on aligning the project with ethical standards, addressing concerns like bias in AI models and compliance with data regulations. I worked with stakeholders to create a user-centric design, ensuring the system was intuitive yet robust.This project wasn't just about building a product; it was about setting a benchmark in technology and leadership. It's the culmination of my team's effort and vision, and I'm proud to have played a part in bringing it to life."
+            "During the facial recognition project, I led the team in designing a scalable, secure architecture while integrating AI and machine learning models. As CTO, I prioritized data privacy and collaborated closely with engineers to overcome technical challenges like training neural networks and optimizing real-time performance.",
+
+            "I also ensured the project met ethical standards, addressing AI bias and compliance with data regulations. The goal was to build a user-friendly, robust system that set a new standard in technology and leadership."
         ],
         secondary: [
             "AI & Machine Learning",
@@ -66,11 +68,6 @@ export const ProjectData = [
             "Bias Mitigation",
             "Real-time Data Processing",
             "Team Leadership",
-            "Stakeholder Management",
-            "Compliance & Regulations",
-            "AI Model Integration",
-            "System Design",
-            "Full-Stack Development"
         ],
         phoneImgSrc: [FaceSearchAI3, FaceSearchAI4, FaceSearchAI5],
         desktopImgSrc: [FaceSearchAI1],
@@ -85,13 +82,13 @@ export const ProjectData = [
         sequence: 3,
         title: "ChatMate",
         text: [
-            "ChatMate is a real-time messaging platform built to simplify communication. As a Full Stack Engineer, I focused on delivering seamless, fast messaging experiences. I worked across the entire tech stack, from developing a secure login system to implementing real-time communication using WebSocket technology. I was responsible for both the back-end services and front-end usability, optimizing the platform's performance.",
-            "One of my key contributions was reducing message latency by 25%, improving communication speed. I also integrated MongoDB to ensure scalability, handling thousands of messages per second. Collaborating closely with the team, I helped create a robust and secure platform designed to meet both technical requirements and user needs."
+            "As a Full Stack Engineer for ChatMate, I focused on building a fast, secure real-time messaging platform. I developed a secure login system, implemented WebSocket communication, and optimized both back-end and front-end performance.",
+            "I reduced message latency by 25% and integrated MongoDB for scalability, supporting thousands of messages per second. My work contributed to creating a robust, secure platform meeting technical and user needs."
         ],
         secondary: ["PWA", "React", "JavaScript", "Node JS"],
         phoneImgSrc: [ChatMate2],
-        desktopImgSrc: [ChatMate1],
-        tabletImgSrc: [],
+        desktopImgSrc: [],
+        tabletImgSrc: [ChatMate1],
         mobileFirst: true,
         githubLink: "https://github.com/MadhavMaheshwari1/ChatMate",
         liveLink: "https://chatmate-b4t0.onrender.com",
@@ -103,9 +100,9 @@ export const ProjectData = [
         title: "Insight IQ",
         text: [
             "As a Software Engineer at Telaverge Communications, I contributed to the development of Insight IQ, an analytics platform delivering real-time insights. My role focused on building and optimizing backend services for fast data processing, secure APIs, and seamless integration with data sources, ensuring scalability and performance.",
-            
+
             "I worked with cross-functional teams to improve platform performance and reliability, focusing on features that enabled data-driven decision-making with minimal delays. By optimizing queries, enhancing system stability, and ensuring smooth data flow, I helped make Insight IQ a reliable tool for users."
-          ],          
+        ],
         secondary: [
             "Data Analytics",
             "Real-time Data Processing",
@@ -114,7 +111,7 @@ export const ProjectData = [
             "Agile Development"
         ],
         phoneImgSrc: [InsightIQ3, InsightIQ4, InsightIQ5],
-        desktopImgSrc: [InsightIQ1,InsightIQ2],
+        desktopImgSrc: [InsightIQ1, InsightIQ2],
         tabletImgSrc: [InsightIQ6],
         mobileFirst: true,
         githubLink: "https://github.com/MadhavMaheshwari1/ChatMate",
