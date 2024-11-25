@@ -35,6 +35,11 @@ const GlobalStyles = createGlobalStyle`
         display: block;
     }
 
+    a img:hover{
+    transform:scale(1.2);
+    transition:transform 500ms linear;
+    }
+
     html{
         overflow: hidden;
         min-height: -webkit-fill-available;
@@ -85,4 +90,4 @@ const GlobalStyles = createGlobalStyle`
     }
 `;
 
-export default GlobalStyles;  // Default export
+export default GlobalStyles; // Default export
