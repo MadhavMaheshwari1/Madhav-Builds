@@ -54,14 +54,15 @@ const WorksItemStyles = styled.li`
                     width: 100%;
                     height: 100%;
                     position: absolute;
-                    top: 0;
+                    top: 0vw;
                     z-index: 10;
                     background-color: var(--black);
                 }
                 img{
                     position: absolute;
-                    height: 100%;
+                    height: 120px;
                     width: auto;
+                    top:-1vw;
                     right: 0;
                     display: block;
                 }
@@ -182,7 +183,7 @@ const WorksItem = (props) => {
                     <motion.div className="thumbnail"
                         style={{ left: thumbnailOffset }}
                     >
-                        <img src={src} alt="" />
+                        <img src={src} alt="Projects" />
                         <motion.div
                             variants={maskAnimation}
                             transition={{ ...transition, duration: 1 }}

@@ -1,11 +1,11 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-import {Nav} from "../components/Nav";
-import {WorksItem} from "../components/WorksItem";
+import { Nav } from "../components/Nav";
+import { WorksItem } from "../components/WorksItem";
 import WorksList from "../Data/WorksList";
-import {motion} from "framer-motion";
-import {Panels} from "../components/Panels";
-import {Animations} from "../Animations";
+import { motion } from "framer-motion";
+import { Panels } from "../components/Panels";
+import { Animations } from "../Animations";
 
 const coverReveal = keyframes`
     from{
@@ -79,53 +79,53 @@ const WorksStyles = styled(motion.div)`
     }
 `
 
-const Works = ()=>{
-    const {parent, transition, worksTitleParent, angleTextReveal} = Animations();
+const Works = () => {
+    const { parent, transition, worksTitleParent, angleTextReveal } = Animations();
     return (
         <>
-            <Nav/>
-            <Panels/>
-            <CoverStyles/>
+            <Nav />
+            <Panels />
+            <CoverStyles />
             <WorksStyles
-            initial={{backgroundColor: "#0f0e0e", pointerEvents: "none"}}
-            animate={{backgroundColor: "transparent", pointerEvents: "unset"}}
-            exit={{opacity: [1, 1, 0], transition:{duration: 2, times: [0, 0.99, 1]}}}
+                initial={{ backgroundColor: "rgba(0, 0, 0, 0)", pointerEvents: "none" }}
+                animate={{ backgroundColor: "rgba(0, 0, 0, 0)", pointerEvents: "unset" }}
+                exit={{ opacity: [1, 1, 0], transition: { duration: 2, times: [0, 0.99, 1] } }}
             >
                 <div className="title-wrapper">
-                    <motion.div 
-                    variants={worksTitleParent}
-                    initial="initial"
-                    animate="animate"
-                    className="title">
+                    <motion.div
+                        variants={worksTitleParent}
+                        initial="initial"
+                        animate="animate"
+                        className="title">
                         <motion.h1 className="word-wrapper">
                             <motion.div
-                            variants={angleTextReveal}
-                            transition={transition}
-                            className="word">Blood,</motion.div>
+                                variants={angleTextReveal}
+                                transition={transition}
+                                className="word">Blood,</motion.div>
                         </motion.h1>
                         <motion.h1 className="word-wrapper">
                             <motion.div
-                            variants={angleTextReveal}
-                            transition={transition}
-                            className="word">Sweat,</motion.div>
+                                variants={angleTextReveal}
+                                transition={transition}
+                                className="word">Sweat,</motion.div>
                         </motion.h1>
                         <motion.h1 className="word-wrapper">
                             <motion.div
-                            variants={angleTextReveal}
-                            transition={transition}
-                            className="word">and ideas.</motion.div>
+                                variants={angleTextReveal}
+                                transition={transition}
+                                className="word">and ideas.</motion.div>
                         </motion.h1>
                     </motion.div>
                 </div>
                 <div className="content">
-                    <motion.ul 
-                    variants={parent}
-                    initial="initial"
-                    animate="animate"
-                    className="works-list">
+                    <motion.ul
+                        variants={parent}
+                        initial="initial"
+                        animate="animate"
+                        className="works-list">
                         {
-                            WorksList.map((data)=>{
-                                return(
+                            WorksList.map((data) => {
+                                return (
                                     <WorksItem data={data} key={data.id} />
                                 )
                             })
@@ -137,4 +137,4 @@ const Works = ()=>{
     )
 }
 
-export {Works}
+export { Works }
