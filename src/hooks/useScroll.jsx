@@ -1,6 +1,7 @@
 import { useRef, useEffect } from "react";
 import LocomotiveScroll from "locomotive-scroll";
 import { useLocation } from "react-router-dom";
+import imagesLoaded from 'imagesloaded';
 
 const useScroll = () => {
     const scrollRef = useRef(null);
@@ -18,7 +19,11 @@ const useScroll = () => {
                 smooth: true,
             },
         });
-        
+
+        imagesLoaded(images, () => {
+            scroll.update();
+        })
+
         return () => {
             if (scroll) scroll.destroy();
         };

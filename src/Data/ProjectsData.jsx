@@ -6,14 +6,12 @@ import FaceSearchAI1 from "../assets/images/projects/FaceSearchAI/FaceSearchAiMa
 import FaceSearchAI3 from "../assets/images/projects/FaceSearchAI/FaceSearchAIMobile1.webp";
 import FaceSearchAI4 from "../assets/images/projects/FaceSearchAI/FaceSearchAIMobile2.webp";
 import FaceSearchAI5 from "../assets/images/projects/FaceSearchAI/FaceSearchAIMobile3.webp";
-import FaceSearchAI2 from "../assets/images/projects/FaceSearchAI/FaceSearchAiIpad.webp";
 
 import PersistMobile1 from "../assets/images/projects/PersistVentures/PersistVenturesMobile1.webp";
 import PersistMobile2 from "../assets/images/projects/PersistVentures/PersistVenturesMobile2.webp";
 import PersistMobile3 from "../assets/images/projects/PersistVentures/PersistVenturesMobile3.webp";
 import PersistTablet1 from "../assets/images/projects/PersistVentures/PersistVenturesTablet1.webp";
 import PersistTablet2 from "../assets/images/projects/PersistVentures/PersistVenturesTablet2.webp";
-import PersistMackbook from "../assets/images/projects/PersistVentures/PersistVenturesMackbook.webp";
 
 import InsightIQ1 from "../assets/images/projects/HeyDaw/HeyDawMackbook1.webp";
 import InsightIQ2 from "../assets/images/projects/HeyDaw/HeyDawMackbook2.webp";
@@ -38,7 +36,6 @@ export const ProjectData = [
             "React",
             "Node.js",
             "MongoDB",
-            "Data Visualization"
         ],
         phoneImgSrc: [PersistMobile3, PersistMobile1, PersistMobile2],
         desktopImgSrc: [],
@@ -61,7 +58,6 @@ export const ProjectData = [
             "AI & Machine Learning",
             "Neural Networks",
             "Deep Learning",
-            "Bias Mitigation",
             "Real-time Data Processing",
             "Team Leadership",
         ],
