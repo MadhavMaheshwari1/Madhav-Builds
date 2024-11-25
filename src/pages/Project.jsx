@@ -7,6 +7,7 @@ import { MainSection } from "../components/projectPage/MainSection";
 import { SecondarySection } from "../components/projectPage/SecondarySection";
 import { PhoneSection } from "../components/projectPage/PhoneSection";
 import { DesktopSection } from "../components/projectPage/DesktopSection";
+import { TabletSection } from "../components/projectPage/TabletSection";
 import { ProjectFooter } from "../components/projectPage/ProjectFooter";
 import { useData } from "../hooks/UseData";
 import { motion } from "framer-motion";
@@ -127,8 +128,28 @@ const Project = () => {
           liveLink={liveLink}
         />
         <SecondarySection secondary={secondary} />
-        <PhoneSection phoneImgSrc={phoneImgSrc} />
-        <DesktopSection desktopImgSrc={desktopImgSrc} />
+        {
+          mobileFirst && desktopImgSrc.length > 0 && phoneImgSrc.length > 0 &&
+          <>
+            <PhoneSection phoneImgSrc={phoneImgSrc} />
+            <DesktopSection desktopImgSrc={desktopImgSrc} />
+          </>
+        }
+        {
+          mobileFirst && desktopImgSrc.length === 0 && phoneImgSrc.length > 0 &&
+          <PhoneSection phoneImgSrc={phoneImgSrc} />
+        }
+        {
+          !mobileFirst && phoneImgSrc.length > 0 &&
+          <>
+            <DesktopSection desktopImgSrc={desktopImgSrc} />
+            <PhoneSection phoneImgSrc={phoneImgSrc} />
+          </>
+        }
+        {
+          tabletImgSrc.length > 0 &&
+          <TabletSection tabletImgSrc={tabletImgSrc} />
+        }
         <ProjectFooter next={getUpdatedNextPath()} />
       </ProjectStyles>
     </>

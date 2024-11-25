@@ -8,7 +8,7 @@ const SecondarySectionStyles = styled.div`
   }
   .content {
     h2 {
-      font-size: calc(var(--VW) * 2);
+      font-size: calc(var(--VW) *2);
       @media (hover: none) and (pointer: coarse), (max-width: 500px) {
         font-size: calc(var(--VW) * 6);
       }

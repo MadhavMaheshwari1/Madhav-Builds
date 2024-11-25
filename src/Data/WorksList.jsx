@@ -1,7 +1,7 @@
 import ChatMate from "../assets/images/projects/ChatMate/ChatMateLaptop.webp";
 import FaceSearchAI from "../assets/images/projects/FaceSearchAI/FaceSearchAiMackbook.webp";
-import InsightIQ from "../assets/images/projects/HeyDaw/HeyDawMackbook.webp";
-import PersistVentures from "../assets/images/projects/PersistVentures/PersistVenturesWorksPage.webp";
+import InsightIQ from "../assets/images/projects/HeyDaw/HeyDawMackbook1.webp";
+import PersistVentures from "../assets/images/projects/PersistVentures/PersistVenturesMackbook.webp";
 
 const WorksList = [
     {

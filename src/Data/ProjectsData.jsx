@@ -11,10 +11,16 @@ import FaceSearchAI2 from "../assets/images/projects/FaceSearchAI/FaceSearchAiIp
 import PersistMobile1 from "../assets/images/projects/PersistVentures/PersistVenturesMobile1.webp";
 import PersistMobile2 from "../assets/images/projects/PersistVentures/PersistVenturesMobile2.webp";
 import PersistMobile3 from "../assets/images/projects/PersistVentures/PersistVenturesMobile3.webp";
-import PersistTablet from "../assets/images/projects/PersistVentures/PersistVenturesTablet.webp";
+import PersistTablet1 from "../assets/images/projects/PersistVentures/PersistVenturesTablet1.webp";
+import PersistTablet2 from "../assets/images/projects/PersistVentures/PersistVenturesTablet2.webp";
 import PersistMackbook from "../assets/images/projects/PersistVentures/PersistVenturesMackbook.webp";
 
-import InsightIQ from "../assets/images/projects/HeyDaw/HeyDawMackbook.webp";
+import InsightIQ1 from "../assets/images/projects/HeyDaw/HeyDawMackbook1.webp";
+import InsightIQ2 from "../assets/images/projects/HeyDaw/HeyDawMackbook2.webp";
+import InsightIQ3 from "../assets/images/projects/HeyDaw/HeyDawMobile1.webp";
+import InsightIQ4 from "../assets/images/projects/HeyDaw/HeyDawMobile2.webp";
+import InsightIQ5 from "../assets/images/projects/HeyDaw/HeyDawMobile3.webp";
+import InsightIQ6 from "../assets/images/projects/HeyDaw/HeyDawIPad.webp";
 
 export const ProjectData = [
     {
@@ -34,9 +40,9 @@ export const ProjectData = [
             "Cloud Infrastructure",
             "Data Visualization"
         ],
-        phoneImgSrc: [PersistMobile1,PersistMobile2,PersistMobile3],
-        desktopImgSrc: [PersistMackbook],
-        tabletImgSrc: [PersistTablet],
+        phoneImgSrc: [PersistMobile3,PersistMobile1,PersistMobile2],
+        desktopImgSrc: [],
+        tabletImgSrc: [PersistTablet2,PersistTablet1],
         mobileFirst: true,
         githubLink: "https://github.com/MadhavMaheshwari1",
         liveLink: "https://github.com/MadhavMaheshwari1",
@@ -96,22 +102,20 @@ export const ProjectData = [
         sequence: 4,
         title: "Insight IQ",
         text: [
-            "As a Software Engineer at Telaverge Communications, I contributed to the development of Insight IQ, a cutting-edge analytics platform designed to deliver actionable insights in real-time. My primary responsibility was to build and optimize backend services that ensured fast data processing and seamless integration with various data sources. I worked across the full technology stack, implementing secure APIs, handling large data volumes, and ensuring the system could scale efficiently.",
-
-            "In addition to improving the performance and reliability of the platform, I collaborated closely with cross-functional teams to deliver a user-friendly experience. My focus was on building features that empowered users to make data-driven decisions with minimal delays. By optimizing query handling, enhancing system stability, and ensuring smooth data flow, I played a key role in making Insight IQ an efficient and reliable tool for its users."
-        ],
+            "As a Software Engineer at Telaverge Communications, I contributed to the development of Insight IQ, an analytics platform delivering real-time insights. My role focused on building and optimizing backend services for fast data processing, secure APIs, and seamless integration with data sources, ensuring scalability and performance.",
+            
+            "I worked with cross-functional teams to improve platform performance and reliability, focusing on features that enabled data-driven decision-making with minimal delays. By optimizing queries, enhancing system stability, and ensuring smooth data flow, I helped make Insight IQ a reliable tool for users."
+          ],          
         secondary: [
             "Data Analytics",
             "Real-time Data Processing",
             "API Development",
             "Scalable Architecture",
-            "Software Architecture",
-            "Full-Stack Development",
             "Agile Development"
         ],
-        phoneImgSrc: [FaceSearchAI3, FaceSearchAI4, FaceSearchAI5],
-        desktopImgSrc: [FaceSearchAI1],
-        tabletImgSrc: [],
+        phoneImgSrc: [InsightIQ3, InsightIQ4, InsightIQ5],
+        desktopImgSrc: [InsightIQ1,InsightIQ2],
+        tabletImgSrc: [InsightIQ6],
         mobileFirst: true,
         githubLink: "https://github.com/MadhavMaheshwari1/ChatMate",
         liveLink: "https://chatmate-b4t0.onrender.com",

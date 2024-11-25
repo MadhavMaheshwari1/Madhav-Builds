@@ -5,7 +5,7 @@ const DesktopSectionStyles = styled.div`
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: 5vh 0;
+    margin: 0vh 0;
     .main{
         width: 55%;
         @media (hover: none) and (pointer: coarse), (max-width: 500px){
@@ -22,6 +22,7 @@ const DesktopSectionStyles = styled.div`
         flex-wrap: wrap;
         margin: 5vh 0;
     }
+    
 `;
 
 const DesktopSection = (props) => {
@@ -31,10 +32,10 @@ const DesktopSection = (props) => {
     return (
         <DesktopSectionStyles data-scroll-section>
             <div data-scroll data-scroll-speed={mobile ? "1" : "0.5"} className="main">
-                <img src={desktopImgSrc[0]} alt="" />
+                <img src={desktopImgSrc[0]} alt=""/>
             </div>
             <div data-scroll data-scroll-speed={mobile ? "1" : "4"} className="side">
-                <img src={desktopImgSrc[1]} alt="" />
+                <img src={desktopImgSrc[1]} alt=""/>
             </div>
         </DesktopSectionStyles>
     );
