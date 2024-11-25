@@ -100,7 +100,7 @@ const About = () => {
                 <Info />
                 <div data-scroll-section className="contact">
                     <h1>Got Some Ideas?</h1>
-                    <a href="https://www.linkedin.com/in/bhavya-bansal98/" rel="noreferrer">Let's Talk.</a>
+                    <a href="https://www.linkedin.com/in/bhavya-bansal98/" rel="noreferrer noopener" target="_blank">Let's Talk.</a>
                 </div>
             </AboutStyles>
         </>
