@@ -147,74 +147,74 @@ const Home = () => {
     <>
       <Panels />
       <HomepageStyles
-        initial={{ backgroundColor: "rgba(0, 0, 0, 0)", pointerEvents: "none" }}
-        animate={{ backgroundColor: "rgba(0, 0, 0, 0)", pointerEvents: "unset" }}
-        exit={{ opacity: [1, 1, 0], transition: { duration: 2, times: [0, 0.99, 1] } }}
+        initial={{backgroundColor: "#0f0e0e", pointerEvents: "none"}}
+        animate={{backgroundColor: "transparent", pointerEvents: "unset"}}
+        exit={{opacity: [1, 1, 0], transition:{duration: 2, times: [0, 0.99, 1]}}}
       >
-        <div className="left">
-          <div className="left-top">
-            <div className="pic" ref={profile}></div>
-            <div className="descriptions">
+          <div className="left">
+            <div className="left-top">
+              <div className="pic" ref={profile}></div>
+              <div className="descriptions">
+                <motion.p
+                  variants={opacityReveal} initial="initial"
+                  animate="animate"
+                  transition={{ ...transition, duration: 1, delay: 4.5 }}
+                >I'm <Link to="https://www.linkedin.com/in/bhavya-bansal98/">Bhavya Bansal</Link>, CTO at Persist Ventures. Passionate about using technology to drive innovation and business growth, I specialize in aligning tech strategies with organizational goals. Currently located in Mumbai...</motion.p>
+              </div>
+            </div>
+            <div className="left-bottom">
+              <motion.a
+                variants={opacityReveal} initial="initial"
+                animate="animate"
+                transition={{ ...transition, duration: 1, delay: 5.7 }}
+                href="https://www.linkedin.com/in/bhavya-bansal98/" target="_blank" rel="noreferrer">
+                <FaLinkedin />
+              </motion.a>
+              <motion.a
+                variants={opacityReveal} initial="initial"
+                animate="animate"
+                transition={{ ...transition, duration: 1, delay: 5.9 }}
+                href="https://github.com/MadhavMaheshwari1" target="_blank" rel="noreferrer">
+                <FaGithub />
+              </motion.a>
+            </div>
+          </div>
+          <div className="right">
+            <Names />
+            <div className="right-descriptions">
               <motion.p
                 variants={opacityReveal} initial="initial"
                 animate="animate"
                 transition={{ ...transition, duration: 1, delay: 4.5 }}
               >I'm <Link to="https://www.linkedin.com/in/bhavya-bansal98/">Bhavya Bansal</Link>, CTO at Persist Ventures. Passionate about using technology to drive innovation and business growth, I specialize in aligning tech strategies with organizational goals. Currently located in Mumbai...</motion.p>
             </div>
-          </div>
-          <div className="left-bottom">
-            <motion.a
-              variants={opacityReveal} initial="initial"
-              animate="animate"
-              transition={{ ...transition, duration: 1, delay: 5.7 }}
-              href="https://www.linkedin.com/in/bhavya-bansal98/" target="_blank" rel="noreferrer">
-              <FaLinkedin />
-            </motion.a>
-            <motion.a
-              variants={opacityReveal} initial="initial"
-              animate="animate"
-              transition={{ ...transition, duration: 1, delay: 5.9 }}
-              href="https://github.com/MadhavMaheshwari1" target="_blank" rel="noreferrer">
-              <FaGithub />
-            </motion.a>
-          </div>
-        </div>
-        <div className="right">
-          <Names />
-          <div className="right-descriptions">
-            <motion.p
-              variants={opacityReveal} initial="initial"
-              animate="animate"
-              transition={{ ...transition, duration: 1, delay: 4.5 }}
-            >I'm <Link to="https://www.linkedin.com/in/bhavya-bansal98/">Bhavya Bansal</Link>, CTO at Persist Ventures. Passionate about using technology to drive innovation and business growth, I specialize in aligning tech strategies with organizational goals. Currently located in Mumbai...</motion.p>
-          </div>
-          <div className="right-bottom">
-            <motion.div className="link-container">
-              <motion.div className="link-wrapper"
-                variants={angleTextReveal} initial="initial" animate="animate" transition={{ ...transition, duration: 1, delay: 5 }}
-              >
-                <Link to="/works" className="pWorks"><span className="number">01.</span>Works</Link>
+            <div className="right-bottom">
+              <motion.div className="link-container">
+                <motion.div className="link-wrapper"
+                  variants={angleTextReveal} initial="initial" animate="animate" transition={{ ...transition, duration: 1, delay: 5 }}
+                >
+                  <Link to="/works" className="pWorks"><span className="number">01.</span>Works</Link>
+                </motion.div>
               </motion.div>
-            </motion.div>
-            <motion.div className="link-container">
-              <motion.div className="link-wrapper"
-                variants={angleTextReveal} initial="initial" animate="animate" transition={{ ...transition, duration: 1, delay: 5.2 }}
-              >
-                <Link to="/about"><span className="number">02.</span>About</Link>
+              <motion.div className="link-container">
+                <motion.div className="link-wrapper"
+                  variants={angleTextReveal} initial="initial" animate="animate" transition={{ ...transition, duration: 1, delay: 5.2 }}
+                >
+                  <Link to="/about"><span className="number">02.</span>About</Link>
+                </motion.div>
               </motion.div>
-            </motion.div>
-            <motion.div className="link-container">
-              <motion.div className="link-wrapper"
-                variants={angleTextReveal} initial="initial" animate="animate" transition={{ ...transition, duration: 1, delay: 5.4 }}
-              >
-                <Link to="mailto:maheshwarimadhav166@gmail.com" className="pContact"><span className="number">03.</span>Contact</Link>
+              <motion.div className="link-container">
+                <motion.div className="link-wrapper"
+                  variants={angleTextReveal} initial="initial" animate="animate" transition={{ ...transition, duration: 1, delay: 5.4 }}
+                >
+                  <Link to="mailto:maheshwarimadhav166@gmail.com" className="pContact"><span className="number">03.</span>Contact</Link>
+                </motion.div>
               </motion.div>
-            </motion.div>
+            </div>
           </div>
-        </div>
-      </HomepageStyles>
-    </>
-  )
+        </HomepageStyles>
+      </>
+      )
 }
 
-export { Home }
+      export {Home}

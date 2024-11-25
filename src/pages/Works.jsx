@@ -87,8 +87,8 @@ const Works = () => {
             <Panels />
             <CoverStyles />
             <WorksStyles
-                initial={{ backgroundColor: "rgba(0, 0, 0, 0)", pointerEvents: "none" }}
-                animate={{ backgroundColor: "rgba(0, 0, 0, 0)", pointerEvents: "unset" }}
+                initial={{ backgroundColor: "#0f0e0e", pointerEvents: "none" }}
+                animate={{ backgroundColor: "transparent", pointerEvents: "unset" }}
                 exit={{ opacity: [1, 1, 0], transition: { duration: 2, times: [0, 0.99, 1] } }}
             >
                 <div className="title-wrapper">
@@ -137,4 +137,4 @@ const Works = () => {
     )
 }
 
-export { Works }
+export { Works };

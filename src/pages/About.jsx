@@ -10,7 +10,7 @@ import { BigText } from "../components/About/BigText";
 import { MainSection } from "../components/About/MainSection";
 
 const AboutStyles = styled(motion.div)`
-    padding: 0 10vw;
+    padding: 0 4vw;
     padding-bottom: 6vw;
     .hello{
         h1{
@@ -53,6 +53,23 @@ const AboutStyles = styled(motion.div)`
             }
         }
     }
+    .contact{
+        text-align: right;
+        h1{
+            font-size: calc(var(--VW)*6);
+            text-transform: uppercase;
+        }
+        a{
+            font-size: calc(var(--VW)*10);
+            text-transform: uppercase;
+            -webkit-text-fill-color: var(--burlywood);
+            -webkit-text-stroke: 0.14vw var(--black);
+            &:hover{
+                -webkit-text-fill-color: var(--black);
+                -webkit-text-stroke: 0.14vw var(--burlywood);
+            }
+        }
+    }
 `
 
 const About = () => {
@@ -81,6 +98,10 @@ const About = () => {
                     <h1>Now Full Stack CTO</h1>
                 </div>
                 <Info />
+                <div data-scroll-section className="contact">
+                    <h1>Got Some Ideas?</h1>
+                    <a href="https://www.linkedin.com/in/bhavya-bansal98/" rel="noreferrer">Let's Talk.</a>
+                </div>
             </AboutStyles>
         </>
     )

@@ -80,6 +80,15 @@ const Info = () => {
                 <p>Node.js, React.js, Vue.js, Firebase, Git, PWA</p>
                 <h2>AI & Software Development</h2>
                 <p>AI, Machine Learning, NLP, TensorFlow</p>
+                <h2>Learning</h2>
+                <p>As a CTO, staying on top of emerging technologies and continuously learning is crucial. Currently, I am diving deeper into the following technologies:</p>
+                <p><strong>Gatsby.js:</strong> An open-source framework for building fast, static websites with React. It offers exceptional performance and scalability, making it ideal for modern web applications.</p>
+                <p><strong>Java:</strong> A versatile, object-oriented programming language used extensively in enterprise applications, Android development, and large-scale systems. I'm enhancing my expertise in Java to handle complex backend solutions and services.</p>
+                <p>I'm also exploring new tools and technologies to improve development processes, maintain high-quality code standards, and ensure optimal performance across all platforms.</p>
+                <h2>Other Skills</h2>
+                <p> Content Creation, Media Management</p>
+                <h2>Volunteer/Organizations</h2>
+                <p>CTO @FacesearchAI, HeyDaw Technologies, Telaverge Communications</p>
                 <h2>Education</h2>
                 <p>Bachelor of Technology (B.Tech) <br />Computer Science <br />Dr. A.P.J. Abdul Kalam Technical University, India</p>
             </div>
